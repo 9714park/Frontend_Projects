@@ -22,6 +22,15 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: none;
+}
+
+a > img {
+  vertical-align: middle;
+}
+
 h1,
 h2 {
   font-family: 'Raleway', 'sans-serif';
@@ -63,7 +72,6 @@ nav ul li {
 
 nav ul a {
   color: hsl(243, 87%, 12%);
-  text-decoration: none;
 }
 
 /* Form Styling */
@@ -92,6 +100,7 @@ header {
   margin-bottom: 100px;
 }
 
+/* Section styling */
 .light-blueish {
   background-color: #f8f8fe;
   margin-top: 100px;
@@ -104,8 +113,8 @@ header {
   background-image: url('images/bg-curve-desktop.svg');
   background-size: 100% 100%;
   position: absolute;
-  top: -60px;
+  top: -50px;
   left: 0;
-  height: 60px;
+  height: 50px;
   width: 100%;
 }
