@@ -7,7 +7,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: hsl(243, 87%, 12%);
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin: 0;
 }
 
 .container {
@@ -33,6 +34,13 @@ h2 {
 
 .flex > div {
   flex-grow: 1;
+}
+
+.flex > div:first-child {
+  margin-right: 30px;
+}
+.flex > div:last-child {
+  margin-left: 30px;
 }
 
 /* Nav Styling */
@@ -78,4 +86,26 @@ button {
   padding: 15px;
   flex: 0.3;
   margin-left: 10px;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+.light-blueish {
+  background-color: #f8f8fe;
+  margin-top: 100px;
+  position: relative;
+  padding: 50px 0;
+}
+
+.light-blueish::before {
+  content: '';
+  background-image: url('images/bg-curve-desktop.svg');
+  background-size: 100% 100%;
+  position: absolute;
+  top: -60px;
+  left: 0;
+  height: 60px;
+  width: 100%;
 }
