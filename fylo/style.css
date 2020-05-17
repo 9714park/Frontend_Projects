@@ -15,7 +15,7 @@ body {
   width: 1200px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 img {
@@ -43,14 +43,14 @@ h4 {
 }
 
 .flex > div {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .flex > div:first-child {
-  margin-right: 30px;
+  margin-right: 80px;
 }
 .flex > div:last-child {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 /* Nav Styling */
@@ -58,17 +58,20 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 nav ul {
   display: flex;
   padding: 0;
   list-style-type: none;
+  justify-content: center;
+  margin-right: 10px;
 }
 
 nav ul li {
-  margin-left: 50px;
+  margin: 0 20px;
 }
 
 nav ul a {
@@ -87,6 +90,10 @@ input {
   flex: 0.7;
 }
 
+input::placeholder {
+  color: lightgrey;
+}
+
 button {
   border: 1px solid hsl(224, 93%, 58%);
   background-color: hsl(224, 93%, 58%);
@@ -96,6 +103,8 @@ button {
   padding: 15px;
   flex: 0.3;
   margin-left: 10px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 header {
@@ -124,7 +133,7 @@ header {
 /* Testimonial styling */
 .testimonial-box {
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
   border-radius: 5px;
   padding: 25px;
   margin-top: 40px;
@@ -153,4 +162,78 @@ header {
 .user-info h4 {
   font-weight: 700;
   margin: 0;
+}
+
+/* Bottom section */
+.blueish {
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+  padding: 50px 0;
+}
+
+.blueish form {
+  flex-direction: column;
+}
+
+.blueish form input {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border: none;
+  flex: 1;
+}
+
+.blueish form button {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+
+  margin: 15px 0;
+  width: 40%;
+}
+
+/* Footer */
+footer {
+  background-color: hsl(243, 87%, 12%);
+  color: #fff;
+  padding-top: 50px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 20px;
+}
+
+footer p {
+  text-align: right;
+}
+
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .circle {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
